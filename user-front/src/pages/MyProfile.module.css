@@ -1,0 +1,37 @@
+.content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.user{
+    margin: 0 auto;
+    width: 30%;
+    height: inherit;
+    border: 1px solid #77002e ;
+    border-radius: 5px;
+    color: #77002e;
+    padding: 30px;
+
+}
+.user h2{
+    color: #77002e;
+}
+
+.user button{
+    border: 1px solid #77002e;
+    color: #77002e;
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px;
+    width: 80px;
+    height: 40px;
+}
+.user button:hover,
+.user button:active{
+    background-color:#8c1140 ;
+    color: #ffe2ed;
+}
+
+
+
