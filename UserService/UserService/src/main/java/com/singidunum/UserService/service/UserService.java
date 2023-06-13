@@ -25,6 +25,7 @@ public class UserService implements IUserService{
     @Override
     public UserDTO createUser(UserDTO userDTO) {
         User user = mapper.map(userDTO, User.class);
+
         userRepository.save(user);
         return mapper.map(user, UserDTO.class);
     }

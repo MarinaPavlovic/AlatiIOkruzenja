@@ -39,7 +39,7 @@ function MyProfilePage() {
 
 	const editSubmitHandler = (e) => {
 		e.preventDefault();
-		fetch("http://localhost:8080/user/edit", {
+		fetch("http://localhost:8080/user/create", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

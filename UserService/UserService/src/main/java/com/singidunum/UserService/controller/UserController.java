@@ -51,13 +51,6 @@ public class UserController {
         return  new ResponseEntity<UserDTO>(userService.createUser(user), HttpStatus.OK);
     }
 
-    @PostMapping("edit")
-    public ResponseEntity<?> editUser (@Valid @RequestBody UserDTO user, BindingResult result ){
-        if(result.hasErrors()){
-            return new ResponseEntity<String>(result.getAllErrors().toString(), HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-        return  new ResponseEntity<UserDTO>(userService.createUser(user), HttpStatus.OK);
-    }
 
     @DeleteMapping("{id}")
     public void deleteUser(@PathVariable("id") Integer id){
